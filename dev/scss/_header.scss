@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    height: 15vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    @media screen and (max-width:769px) {
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }   
+    h1{
+        color:$fontcolor1;
+        font-size: 7.5vmin;
+        text-shadow: orangered 3px 3px 10px;
+        text-align: center;
+        transition: text-shadow 5s;
+           
+    }
+    
+}
