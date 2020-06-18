@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Goudy";
+  src: local("Goudy"), url(/fonts/GoudyBookletter1911-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+header {
+  width: 100%;
+  height: 15vh;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  @media screen and (max-width: 769px) {
+    header {
+      margin-top: 5%;
+      margin-bottom: 0%; } }
+  header h1 {
+    color: #f0a61e;
+    font-size: 7.5vmin;
+    text-shadow: orangered 3px 3px 10px;
+    text-align: center;
+    transition: text-shadow 5s; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Goudy"; }
+
+body {
+  background: url(/img/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.9;
+  overflow-x: hidden; }
+
+.section_1 {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  padding: 1.5em;
+  padding-bottom: 3.5em;
+  background: rgba(224, 206, 147, 0.76);
+  border-radius: 7px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "cont1 cont2" "cont3 cont4" "cont5 cont6";
+  justify-items: center;
+  align-items: flex-start; }
+  @media screen and (max-width: 769px) {
+    .section_1 {
+      padding-bottom: 9.5em;
+      row-gap: 2.5%;
+      grid-template-columns: 100%;
+      grid-template-areas: "cont1" "cont2" "cont4" "cont3" "cont5" "cont6"; } }
+  .section_1 .grid-item {
+    width: 90%;
+    min-height: 100%;
+    height: auto;
+    border-radius: 7px; }
+    @media screen and (max-width: 769px) {
+      .section_1 .grid-item {
+        height: auto;
+        max-height: 250px;
+        width: 80%; } }
+    .section_1 .grid-item h2 {
+      font-size: 2vmax;
+      text-align: center;
+      margin-top: 0; }
+      .section_1 .grid-item h2::first-letter {
+        font-size: 2.5vmax; }
+    .section_1 .grid-item p {
+      font-size: 1.3vmax;
+      font-weight: 900;
+      text-align: left; }
+      .section_1 .grid-item p::first-letter {
+        font-size: 2vmax; }
+
+.section_1 div:nth-child(1) {
+  grid-area: cont1; }
+
+.section_1 div:nth-child(2) {
+  grid-area: cont2;
+  background: url(/img/forest4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 769px) {
+    .section_1 div:nth-child(2) {
+      min-height: 200px;
+      width: 80%; } }
+
+.section_1 div:nth-child(3) {
+  grid-area: cont3;
+  background: url(/img/forest5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 769px) {
+    .section_1 div:nth-child(3) {
+      min-height: 200px;
+      width: 80%; } }
+
+.section_1 div:nth-child(4) {
+  grid-area: cont4; }
+
+.section_1 div:nth-child(5) {
+  grid-area: cont5; }
+
+.section_1 div:nth-child(6) {
+  grid-area: cont6;
+  background: url(/img/forest2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 769px) {
+    .section_1 div:nth-child(6) {
+      min-height: 200px;
+      width: 80%; } }
+
+.footer {
+  margin-top: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: auto;
+  min-height: 17vh;
+  background: linear-gradient(to bottom, rgba(39, 37, 37, 0.301), rgba(26, 22, 22, 0.411) 50%);
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      justify-content: center; } }
+  .footer .container, .footer .copyright {
+    color: #f0a61e; }
+  .footer .container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding-right: 5%; }
+    .footer .container .icon {
+      text-decoration: none;
+      padding: .5em; }
+    .footer .container .icon:hover {
+      text-decoration: underline; }
+    .footer .container li {
+      list-style: none; }
+      .footer .container li a {
+        color: #f0a61e;
+        color: #f0a61e; }
+    .footer .container li a:visited {
+      color: #f0a61e; }
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  text-align: center; }
+
+/*# sourceMappingURL=bonsai.css.map */
